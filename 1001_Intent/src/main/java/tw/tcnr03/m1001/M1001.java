@@ -3,15 +3,19 @@ package tw.tcnr03.m1001;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.SearchManager;
+import android.content.ContentUris;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.StrictMode;
 import android.provider.Contacts;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+
+import java.io.File;
 
 
 public class M1001 extends AppCompatActivity implements View.OnClickListener {
@@ -27,10 +31,11 @@ public class M1001 extends AppCompatActivity implements View.OnClickListener {
     private Button b07;
     private Button b08;
     private Button b09;
-    public static final int CAMERA_REQUEST_CODE = 102;
     private Button b10;
     private Button b11;
-//    private Button b12;
+    private Button b12;
+    private File f;
+    private Button b13;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +80,8 @@ public class M1001 extends AppCompatActivity implements View.OnClickListener {
         b09=(Button)findViewById(R.id.m1001_b009);
         b10=(Button)findViewById(R.id.m1001_b010);
         b11=(Button)findViewById(R.id.m1001_b011);
-//        b12=(Button)findViewById(R.id.m1001_b012);
+        b12=(Button)findViewById(R.id.m1001_b012);
+        b13=(Button)findViewById(R.id.m1001_b013);
         b01.setOnClickListener(this);
         b02.setOnClickListener(this);
         b03.setOnClickListener(this);
@@ -87,7 +93,8 @@ public class M1001 extends AppCompatActivity implements View.OnClickListener {
         b09.setOnClickListener(this);
         b10.setOnClickListener(this);
         b11.setOnClickListener(this);
-//        b12.setOnClickListener(this);
+        b12.setOnClickListener(this);
+        b13.setOnClickListener(this);
     }
 
     @Override
@@ -178,11 +185,21 @@ public class M1001 extends AppCompatActivity implements View.OnClickListener {
                 startActivity(it);
                 break;
 
-//            case R.id.m1001_b012:
-//                uri = Uri.fromParts("package", "tw.tcnr03.m0501", null);
-//                it = new Intent(Intent.ACTION_DELETE, uri);
-//                startActivity(it);
-//                break;
+            case R.id.m1001_b012:
+                //相機<ReadGpuID:221>: Failed to read chip ID from gpu_model. Fallback to use the GSL path
+                it = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+//                File f = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/1.jpg");
+                File f = new File("/storage/emulated/0/Download" + "/a02.jpg");
+                it.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(f));
+                startActivityForResult(it, 0);
+                break;
+
+            case R.id.m1001_b013:
+                //聯絡人詳細資訊顯示找不到
+                Uri uriPerson = ContentUris.withAppendedId(Contacts.People.CONTENT_URI, 5); //5 是朋友的ID
+                it = new Intent(Intent.ACTION_VIEW, uriPerson);
+                startActivity(it);
+                break;
         }
     }
 }

@@ -114,7 +114,16 @@
                 android:text="@string/m1001_b012"
                 android:textSize="@dimen/fontsize"
                 android:textStyle="bold"
-                android:visibility="invisible" />
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/m1001_b013"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b013"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold"
+                android:visibility="visible" />
         </LinearLayout>
     </ScrollView>
 

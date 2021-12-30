@@ -11,5 +11,6 @@
     <string name="m1001_b009">從google搜索內容</string>
     <string name="m1001_b010">傳送影音附件檔</string>
     <string name="m1001_b011">尋找GooglePlay某個應用APP程式</string>
-    <string name="m1001_b012">Uninstall 應用程式</string>
+    <string name="m1001_b012">啟動照相機，並將相片存在指定的檔案中</string>
+    <string name="m1001_b013">顯示某個朋友的詳細資料</string>
 </resources>
