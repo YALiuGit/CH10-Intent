@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="m1001_b001">瀏覽網頁</string>
+    <string name="m1001_b002">顯示我家位置</string>
+    <string name="m1001_b003">路徑規劃</string>
+    <string name="m1001_b004">顯示聯絡人清單</string>
+    <string name="m1001_b005">傳送圖片附件檔</string>
+    <string name="m1001_b006">播放多媒體</string>
+    <string name="m1001_b007">撥打電話</string>
+    <string name="m1001_b008">從圖庫中回傳選到的相片</string>
+    <string name="m1001_b009">從google搜索內容</string>
+    <string name="m1001_b010">傳送影音附件檔</string>
+    <string name="m1001_b011">尋找GooglePlay某個應用APP程式</string>
+    <string name="m1001_b012">Uninstall 應用程式</string>
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Gray"
+    android:padding="@dimen/pa01"
+    tools:context=".M1001">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/m1001_b001"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b001"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b002"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b002"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b003"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b003"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b004"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b004"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b005"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b005"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b006"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b006"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b007"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b007"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b008"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b008"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b009"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b009"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b010"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b010"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b011"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b011"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/m1001_b012"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/m1001_b012"
+                android:textSize="@dimen/fontsize"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/myname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/myname"
+        android:textColor="@color/Yellow"
+        android:textSize="@dimen/fontsize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
